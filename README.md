@@ -3,7 +3,7 @@
 This problem aims at predicting students learning based on logs of tutoring systems. Here we have to find if a student can give correct answer to a problem on the first attempt. So, our target/response variable here is Correct.First.Attempt, according to our dataset. As it has a binary output, 0 or 1, we can define it as a classification problem.
 Very large datasets and highly categorical features are the two main aspects of this project. Missing values are also a challenging problem when we are dealing with a very large training datasets. Moreover, most classifiers are not performing efficiently on large datasets. So far in this project I have tried to fit a model using Logistic Regression, Linear Discriminant Analysis and Quadratic Discriminant Analysis. 
 
-# DATA PREPROCESSING
+# Data Preprocessing
 The ID columns are not really useful for predicting a model. So, I have omitted all ID columns (like Row, Anon Student ID etc.) from my datasets. Also, I have converted all the date-time columns, like First.Transaction.Time, Correct.Transaction.Time, Step.Start.Time etc. in numeric values. 
 The biggest challenge in this project was to process the categorical variables. In general, it is difficult to use categorical features in different models.
 
@@ -28,7 +28,7 @@ dummyKC: the identified skills that are used in a problem, where available. A st
 
 dummyOpportunity: There are some other important features that need to be used in the model. These are knowledge component(KC) and opportunity. I tried to use these columns in the existing model, but the model was not supporting the columns. These categorical values can neither be converted as numeric or factors. So, my next step for this project is working on how to use KC and opportunity as variables for the model.
 
-# MODELS/PREDICTION ALGORITHMS
+# Models/Prediction Algorithms
 Here I have used Logistic Regression(LR) as the first model to predict the test data. The reason is, my dependant variables are categorical and my response variable here is binary. This is a well-known algorithm to find relationship between the categorical dependent variable and one or more independent variables by estimating probabilities.
 I have also used Linear Discriminant Analysis (LDA) as the second model to test the data. The reason is, logistic regression does not make any assumption on the distribution of the data, while LDA does. So, it is expected that sometimes LDA will perform better.
 The third model I have tried with is Quadratic Discriminant Analysis(QDA). QDA assumes a quadratic decision boundary, so it can accurately model a wider range of problems than the linear methods. 
