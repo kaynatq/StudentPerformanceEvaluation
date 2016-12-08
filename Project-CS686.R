@@ -20,7 +20,7 @@ Correct.First.Attempt.test <- Correct.First.Attempt[!train]
 
 # logistic regression
 glm.correct <- glm(Correct.First.Attempt~ First.Transaction.Time + Step.Start.Time + Step.End.Time +
-                     Correct.Transaction.Time + Incorrects, data = x,
+                     Correct.Transaction.Time + Corrects +Incorrects, data = x,
                    family = binomial, subset = train)
 
 summary(glm.correct)
