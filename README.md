@@ -24,7 +24,7 @@ Incorrects: Total number of incorrect attempts by the student on the step. This 
 Hints: Total number of hints requested by the student for the step. The less a student is able to answer a problem, the higher this number will be. So, I think this is a very significant variable. (p-value: < 2e-16)
 Corrects: Total correct attempts by the student for the step. 
 
-dummyKC: the identified skills that are used in a problem, where available. A step can have multiple KCs assigned to it. Multiple KCs for a step are separated by ~~ (two tildes). Since opportunity describes practice by knowledge component, the corresponding opportunities are similarly separated by ~~ (double tilda)
+dummyKC: the identified skills that are used in a problem, where available. A step can have multiple KCs assigned to it. Multiple KCs for a step are separated by ~~ (two tildes). Since opportunity describes practice by knowledge component, the corresponding opportunities are similarly separated by ~~ (double tildes)
 
 dummyOpportunity: There are some other important features that need to be used in the model. These are knowledge component(KC) and opportunity. I tried to use these columns in the existing model, but the model was not supporting the columns. These categorical values can neither be converted as numeric or factors. So, my next step for this project is working on how to use KC and opportunity as variables for the model.
 
